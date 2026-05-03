@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: process.env.REACT_APP_API_URL || "https://team-task-manager-wse8.onrender.com/api" });
+const API = axios.create({ baseURL: process.env.REACT_APP_API_URL || "https://team-task-manager-backend-o9cp.onrender.com/api" });
 
 API.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");
